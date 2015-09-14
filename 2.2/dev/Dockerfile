@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 		ca-certificates
 
 ENV NODE_VERSION 4.0.0
-ENV NPM_VERSION 2.13.0
+ENV NPM_VERSION 2.14.2
 
 RUN curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
 	&& tar -xzf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
